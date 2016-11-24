@@ -197,8 +197,14 @@ jQuery(document).ready(function(){
         },
         //请求总体态势数据
         getGlobalUrl:function(){
+<<<<<<< HEAD
             return '/index.php/product/index/chart';
             //return 'http://localhost:8080/FoodTracing/state01';
+=======
+
+            return 'http://192.168.0.117/index.php/product/index/chart';
+            // return 'http://localhost:8080/FoodTracing/state01';
+>>>>>>> dev
         }
     };
     /**
