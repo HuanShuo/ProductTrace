@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 */
+
+body, div, h5, ul, li {
+	margin:0;
+	padding:0;
+}
+body {
+	font:12px/1.5 Arial;
+}
+li {
+	list-style:none;
+}
+a:link, a:visited {
+	color:#333;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+#wrap_tabs {
+	width:836px;
+	border:3px solid white;
+	border-width:3px 0;
+	[a]
+	margin:10px auto;
+}
+#list {
+	overflow:hidden;
+	zoom:1;
+	margin-left:-10px;
+}
+#wrap_tabs .item {
+	display:inline;
+	float:left;
+	padding-bottom:10px;
+	border:1px solid #EBEBEB;
+	margin:0 0 10px 0;
+}
+#wrap_tabs .item .tab {
+	position:relative;
+	height:25px;
+	border-bottom:1px solid #CCC;
+	margin:8px;
+}
+#wrap_tabs .item .tab h5 {
+	position:absolute;
+	left:10px;
+	font-size:14px;
+}
+#wrap_tabs .item .tab .switchBtn {
+	position:absolute;
+	top:3px;
+	right:30px;
+}
+#wrap_tabs .item .tab .switchBtn a {
+	float:left;
+	width:15px;
+	height:15px;
+	margin-left:5px;
+	overflow:hidden;
+	text-indent:-999px;
+	background:url(tab.gif) no-repeat;
+	outline:none;
+}
+#wrap_tabs .item .tab .switchBtn a.prev {
+	background-position:0 -25px;
+}
+#wrap_tabs .item .tab .switchBtn a.prevNot {
+	background-position:0 0;
+	cursor:default;
+}
+#wrap_tabs .item .tab .switchBtn a.next {
+	background-position:right -25px;
+}
+#wrap_tabs .item .tab .switchBtn a.nextNot {
+	background-position:right 0;
+	cursor:default;
+}
+
+
+
+
+
+#wrap_tabs .item .tab ul { position:absolute;top:-2px;left:20px;height:28px;overflow:hidden;  }
+#wrap_tabs .item .tab ul li { float:left;cursor:pointer;line-height:26px;padding:0 8px;  }
+#wrap_tabs .item .tab ul li.current { cursor:text;color:#E45E2E;font-weight:700;border:1px solid #CCC;border-bottom-color:#FFF;  }
+#wrap_tabs .item .items { padding:0 15px; }
+/*
+#wrap_tabs .item .items a {  color:#3A64B0;  }
+#wrap_tabs .item .items li {  height:24px;  line-height:24px;  padding-left:20px;  border-bottom:1px solid #EBEBEB;  }
+#wrap_tabs .item .btn {  height:22px;  margin-top:10px;  }
+#wrap_tabs .item .btn a {  float:right;  width:74px;  height:22px;  overflow:hidden;  margin-right:15px;  text-indent:-9999px;  background:url(tab01.gif) no-repeat;  }
+#wrap_tabs .item .btn a:hover {  background-position:0 -22px;  }
+*/

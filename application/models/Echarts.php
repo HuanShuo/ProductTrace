@@ -571,7 +571,7 @@ class Echarts extends CI_Model
 			}
 
 			if($type=="map"){
-				$str = "(function(id){echarts.util.mapData.params.params.yunchengshi = {getGeoJson: function (callback) {\$.getJSON('/assets/hplus/js/plugins/echarts/geoJson/140800.json', callback);}}
+				$str = "(function(id){echarts.util.mapData.params.params.yunchengshi = {getGeoJson: function (callback) {\$.getJSON('/public/js/plugins/echarts/geoJson/140800.json', callback);}}
 				var myChart = echarts.init(document.getElementById(id));\n";
 			}else{
 				$str = "(function(id){var myChart = echarts.init(document.getElementById(id));\n";

@@ -28,7 +28,7 @@
 
 		.f-h10{height:10px;}
 	</style>
-	<script src="<?php echo base_url()?>public/js/echarts.min.js"></script>
+	<script src="<?php echo base_url()?>public/js/plugins/echarts/echarts-all.js"></script>
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url()?>public/js/plugins/lrTab/lrTab.css"  />
 	<script type="text/javascript" src="<?php echo base_url()?>public/js/plugins/lrTab/lrTab.js"></script>
 </head>
@@ -147,50 +147,36 @@
 										<td width="15%" align="center" style="background-color: #4bacff;color:#FFF">D(&gt;60)
 										</td>
 									</tr>
-
-
 									<tr>
 										<td height="26" align="center" style="border: 1px solid #4bacff;">食品生产企业</td>
-
-
 										<td align="center" style="border: 1px solid #4bacff;">
 											0
 										</td>
-
 										<td align="center" style="border: 1px solid #4bacff;">
 											0
 										</td>
-
 										<td align="center" style="border: 1px solid #4bacff;">
 											0
 										</td>
-
 										<td align="center" style="border: 1px solid #4bacff;">
 											0
 										</td>
-
 									</tr>
 
 									<tr>
 										<td height="26" align="center" style="border: 1px solid #4bacff;">食品销售企业</td>
-
-
 										<td align="center" style="border: 1px solid #4bacff;">
 											2
 										</td>
-
 										<td align="center" style="border: 1px solid #4bacff;">
 											0
 										</td>
-
 										<td align="center" style="border: 1px solid #4bacff;">
 											0
 										</td>
-
 										<td align="center" style="border: 1px solid #4bacff;">
 											0
 										</td>
-
 									</tr>
 
 									<tr>
@@ -249,7 +235,7 @@
 									<tbody>
 									<tr class="hd">
 										<td height="30">
-											<span class="tt">&nbsp;&nbsp;<b>企业生产批次产品数量统计 TOP 5</b></span>
+											<span class="tt">&nbsp;&nbsp;<b>企业生产产品数量统计 TOP 5</b></span>
 										</td>
 										<td align="center">数量</td>
 									</tr>
