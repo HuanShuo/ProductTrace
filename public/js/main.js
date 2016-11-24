@@ -197,8 +197,8 @@ jQuery(document).ready(function(){
         },
         //请求总体态势数据
         getGlobalUrl:function(){
-            // return 'http://192.168.0.117/index.php/product/chart/show';
-            return 'http://localhost:8080/FoodTracing/state01';
+            return 'http://192.168.0.117/index.php/product/index/chart';
+            // return 'http://localhost:8080/FoodTracing/state01';
         }
     };
     /**
@@ -324,7 +324,7 @@ jQuery(document).ready(function(){
                 '<div class="title">'+extData.name+'</div>',
                 '<div class="content clearfix">',
                 '<div class="img">',
-                '<img src="img/1.jpg" width=100 height=60/>',
+                '<img src="public/img/1.jpg" width=100 height=60/>',
                 '</div>',
                 '<div class="cont">',
                 '<p><span>地址：</span>'+extData.address+'</p>',
