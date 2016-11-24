@@ -4,14 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>企业抽检信息</title>
-	<link href="<?php echo base_url()?>assets/hplus/css/bootstrap.min.css" rel="stylesheet">
-	<link href="<?php echo base_url()?>assets/hplus/css/font-awesome.min.css" rel="stylesheet">
-	<!--link href="<?php echo base_url()?>assets/hplus/css/plugins/iCheck/custom.css" rel="stylesheet"-->
-	<link href="<?php echo base_url()?>assets/hplus/css/animate.css" rel="stylesheet">
-	<link href="<?php echo base_url()?>assets/hplus/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
-	<link href="<?php echo base_url()?>assets/hplus/css/bootstrap-table.min.css" rel="stylesheet">
-	<link href="<?php echo base_url()?>assets/hplus/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
-	<link href="<?php echo base_url()?>assets/hplus/css/style.min.css" rel="stylesheet">
+	<link href="<?php echo base_url()?>public/css/bootstrap.min.css" rel="stylesheet">
+	<link href="<?php echo base_url()?>public/css/font-awesome.min.css" rel="stylesheet">
+	<link href="<?php echo base_url()?>public/css/animate.min.css" rel="stylesheet">
+	<link href="<?php echo base_url()?>public/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+	<link href="<?php echo base_url()?>public/css/bootstrap-table.min.css" rel="stylesheet">
+	<link href="<?php echo base_url()?>public/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+	<link href="<?php echo base_url()?>public/css/style.min.css" rel="stylesheet">
 	<style>
 		.nav{text-align:center; height:50px;line-height:50px;}
 		.nav ul li{display:inline-block;margin:0 10px;}
@@ -261,17 +260,17 @@
 		</div>
 	</div>
 </div>
-<script src="<?php echo base_url()?>assets/hplus/js/jquery.min.js"></script>
-<script src="<?php echo base_url()?>assets/hplus/js/bootstrap.min.js"></script>
-<script src="<?php echo base_url()?>assets/hplus/js/plugins/peity/jquery.peity.min.js"></script>
-<script src="<?php echo base_url()?>assets/hplus/js/plugins/nestable/jquery.nestable.js"></script>
-<script src="<?php echo base_url()?>assets/hplus/js/plugins/sweetalert/sweetalert.min.js"></script>
-<script src="<?php echo base_url()?>assets/hplus/js/plugins/echarts/echarts-all.js"></script>
+<script src="<?php echo base_url()?>public/js/jquery.min.js"></script>
+<script src="<?php echo base_url()?>public/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url()?>public/js/plugins/peity/jquery.peity.min.js"></script>
+<script src="<?php echo base_url()?>public/js/plugins/nestable/jquery.nestable.js"></script>
+<script src="<?php echo base_url()?>public/js/plugins/sweetalert/sweetalert.min.js"></script>
+<script src="<?php echo base_url()?>public/js/echarts.min.js"></script>
 <?php if($enterprise_id):?>
 <script src="<?php echo site_url("product/inspect/chart/".$enterprise_id)?>"></script>
 <?php endif;?>
-<script src="<?php echo base_url()?>assets/hplus/js/bootstrap-table.min.js"></script>
-<script src="<?php echo base_url()?>assets/hplus/js/bootstrap-table-zh-CN.min.js"></script>
+<script src="<?php echo base_url()?>public/js/bootstrap-table.min.js"></script>
+<script src="<?php echo base_url()?>public/js/bootstrap-table-zh-CN.min.js"></script>
 <script>
 	function openWin(EntId,BatId){
 		$("#EntId").val(EntId);
@@ -314,12 +313,6 @@
 				},
 				success:function(data){
 					if(data.status && data.status==1){
-						//alert(data.message);
-//						swal({
-//							title: "恭喜！",
-//							text: "更新检测数据成功",
-//							type: "success"
-//						});
 						swal("恭喜!", data.message, "success");
 						$("#myModal").hide();
 						window.location.reload();
