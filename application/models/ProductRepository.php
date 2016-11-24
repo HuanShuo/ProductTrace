@@ -39,19 +39,6 @@ class ProductRepository extends CI_Model
 			$this->enterpriseId = $EntId;
 		}
 
-
-		/*
-		if($EnterpriseId<0) {
-			if ($EnterpriseId == -82) {
-				$id = "082";
-			} else {
-				$id = sprintf("%02d", abs($EnterpriseId));
-			}
-			//连接单平台数据库
-			$this->db  = $this->load->database("生产溯源单平台_$id", true);
-		}else{
-			$this->db  = $this->load->database('生产溯源多平台', true);
-		}*/
 		return $this;
 	}
 	/**

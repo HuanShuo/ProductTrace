@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>运城市智慧食药大数据中心</title>
-	<link rel="stylesheet" href="<?php echo base_url()?>assets/hplus/css/bootstrap.min.css">
-	<script src="<?php echo base_url()?>assets/hplus/js/jquery.min.js"></script>
-	<script src="<?php echo base_url()?>assets/hplus/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="<?php echo base_url()?>public/css/bootstrap.min.css">
+	<script src="<?php echo base_url()?>public/js/jquery.min.js"></script>
+	<script src="<?php echo base_url()?>public/js/bootstrap.min.js"></script>
 	<style type="text/css">
 		.m-number{background-color: #FFF; text-align: center;}
 		.m-number .title{font: 22px/26px microsoft yahei;font-weight: bold;color: #666;}
@@ -28,9 +28,9 @@
 
 		.f-h10{height:10px;}
 	</style>
-	<script src="<?php echo base_url()?>assets/hplus/js/plugins/echarts/echarts-all.js"></script>
-	<link type="text/css" rel="stylesheet" href="<?php echo base_url()?>assets/hplus/js/plugins/lrTab/lrTab.css"  />
-	<script type="text/javascript" src="<?php echo base_url()?>assets/hplus/js/plugins/lrTab/lrTab.js"></script>
+	<script src="<?php echo base_url()?>public/js/echarts.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url()?>public/js/plugins/lrTab/lrTab.css"  />
+	<script type="text/javascript" src="<?php echo base_url()?>public/js/plugins/lrTab/lrTab.js"></script>
 </head>
 <body>
 
@@ -38,7 +38,7 @@
 
 	<div class="row" style="background-color:#046dae;">
 		<div class="col-md-12" style="text-align: center;color:#FFFFFF;">
-			<h1 style="font: 30px/56px 'microsoft yahei';"><a href="../main/a_t_sy_qy_list.aspx" style="color:white;text-decoration:none">运城市智慧食药大数据中心</a></h1>
+			<h1 style="font: 30px/56px 'microsoft yahei';"><a href="javascript:;" style="color:white;text-decoration:none">运城市智慧食药大数据中心</a></h1>
 		</div>
 	</div>
 	<div class="row">
