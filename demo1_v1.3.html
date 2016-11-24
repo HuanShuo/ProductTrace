@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生产溯源监管端</title>
+	<style type="text/css">
+		*{margin:0;padding:0;}
+	</style>
+	<link rel="stylesheet" href="public/css/main2.css">
+    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/css/style.min.css" rel="stylesheet">
+    <link href="public/css/bootstrap-table.min.css" rel="stylesheet">
+	<link href="public/css/animate.min.css" rel="stylesheet">
+</head>
+<body class="gray-bg top-navigation">
+    <div id="wrapper">
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom white-bg">
+				<nav class="navbar navbar-static-top">
+					<div class="countyList">
+						<ul class="listGroup1"  role="tablist">
+							<li role="presentation"><a href="javascript:void(0)" data-regcode='140801'>运城市</a></li>
+							<li role="presentation"><a href="javascript:void(0)" data-regcode='140802'>盐湖区</a></li>
+							<li role="presentation"><a href="javascript:void(0)" data-regcode='140882'>河津市</a></li>
+							<li role="presentation"><a href="javascript:void(0)" data-regcode='140881'>永济市</a></li>
+							<li role="presentation"><a href="javascript:void(0)" data-regcode='140824'>稷山县</a></li>
+							<li role="presentation"><a href="javascript:void(0)" data-regcode='140823'>闻喜县</a></li>
+							<li role="presentation"><a href="javascript:void(0)" data-regcode='140822'>万荣县</a></li>
+							<li role="presentation"><a href="javascript:void(0)" data-regcode='140825'>新绛县</a></li>
+							<li role="presentation"><a href="javascript:void(0)" data-regcode='140821'>临猗县</a></li>
+							<li role="presentation"><a href="javascript:void(0)" data-regcode='140829'>平陆县</a></li>
+							<li role="presentation"><a href="javascript:void(0)" data-regcode='140830'>芮城县</a></li>
+							<li role="presentation"><a href="javascript:void(0)" data-regcode='140827'>垣曲县</a></li>
+							<li role="presentation"><a href="javascript:void(0)" data-regcode='140826'>绛县</a></li>
+							<li role="presentation"><a href="javascript:void(0)" data-regcode='140828'>夏县</a></li>
+						</ul>
+						<ul class="listGroup2" role="tablist">
+							<li role="presentation"><a href="javascript:void(0)" data-regcode='140830400000'>风陵渡经济开发区</a></li>
+							<li role="presentation"><a href="javascript:void(0)" data-regcode='140802401000'>空港经济开发区</a></li>
+							<li role="presentation"><a href="javascript:void(0)" data-regcode='140826400000'>绛县经济开发区</a></li>
+							<li role="presentation"><a href="javascript:void(0)" data-regcode='140802400000'>运城经济开发区</a></li>
+						</ul>
+					</div>
+				</nav>
+            </div>
+            <div class="wrapper-content">
+				<div id="indexMain" style="display:block">
+					<div class="ibox">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="ibox-title">
+									<h5>生产溯源总体态势</h5>
+								</div>
+								<div class="ibox-content text-muted" style="height:165px;">
+									<div class="row box2">
+										<h3 class="no-margins"><a href="javascript:void(0)"><span id="totalProNum"></span></a></h3>
+										<div class="font-bold text-navy ">
+											<small>生产产品总数</small>
+										</div>
+									</div>
+									<div class="row box3">
+										<div class="col-md-3">
+											<p class="no-margins"><a><span id="totalOnlineNum"></span></a></p>
+											<div class="font-bold text-navy">
+												<small>上线总数 【家】</small>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<p class="no-margins"><a><span id="totalSpeNum"></span></a></p>
+											<div class="font-bold text-navy">
+												<small>品种总数 【种】</small>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<p class="no-margins"><a><span id="totalBatchNum"></span></a></p>
+											<div class="font-bold text-navy">
+												<small>批次总数【批】</small>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<p class="no-margins"><a><span id="totalStockNum"></span></a></p>
+											<div class="font-bold text-navy">
+												<small>原料台账 【个】</small>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3" id="mainPage">
+								<div class="ibox-title">
+									<h5> 生产批次数量 TOP 5</h5>
+								</div>
+								<div class="ibox-content batchSort" style="height:165px;">
+									<ul>
+										<li>
+											<span>1</span><a href="javascript:void(0)">山西晶鑫达食品有限公司</a>
+										</li>
+										<li>
+											<span>2</span><a href="javascript:void(0)"> 运城市王来成农产品有限公司</a>
+										</li>
+										<li>
+											<span>3</span><a href="javascript:void(0)">山西晟浩粮油有限公司盐湖区工业园分公司</a>
+										</li>
+										<li>
+											<span>4</span><a href="javascript:void(0)">山西瑞芝生物科技有限公司</a>
+										</li>
+										<li>
+											<span>5</span><a href="javascript:void(0)">山西一生情枣业有限公司</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-3" id="mainPage">
+								<div class="ibox-title">
+									<h5> 生产批次产品数量 TOP 5</h5>
+								</div>
+								<div class="ibox-content batchSort" style="height:165px;">
+									<ul>
+										<li>
+											<span>1</span><a href="javascript:void(0)"> 山西瑞芝生物科技有限公司</a>
+										</li>
+										<li>
+											<span>2</span><a href="javascript:void(0)">山西晶鑫达食品有限公司</a>
+										</li>
+										<li>
+											<span>3</span><a href="javascript:void(0)">山西省运城市福同惠食品有限公司</a>
+										</li>
+										<li>
+											<span>4</span><a href="javascript:void(0)">亚宝药业集团股份有限公司</a>
+										</li>
+										<li>
+											<span>5</span><a href="javascript:void(0)">运城市王来成农产品有限公司</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row barGraph">
+								<div class="tips" id="tips">
+									<ul>
+										<li><a href="javascript:void(0)">按区域统计</a></li>
+										<li><a href="javascript:void(0)">按类型统计</a></li>
+										<li><a href="javascript:void(0)">抽检合格率统计</a></li>
+										<li><a href="javascript:void(0)">企业市场占有率</a></li>
+										<li><a href="javascript:void(0)">企业产值统计</a></li>
+									</ul>
+								</div>
+								<div class="col-md-12" id="cont">
+									<div class="barArea barCom" id="dataCounty"></div>
+									<div class="barEnt barCom" id="dataCate" style="display:none;"></div>
+									<div class="barPassRate barCom" id="dataPass" style="display:none;"></div>
+									<div class="barBenefits barCom" id="dataBenefit" style="display:none;"></div>
+									<div class="barOccupyRate barCom" id="dataOccupy" style="display:none;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div >
+				<div id="districtPage" style="display: none">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h5>企业列表</h5>
+						</div>
+						<div class="ibox-content">
+							<div class="row row-lg">
+								<div class="col-sm-12">
+									<div class="example">
+										<table id="entTable" data-toggle="table" data-query-params="queryParams" data-mobile-responsive="true" data-height="300" data-pagination="true" data-icon-size="outline" data-search="false">
+											<thead>
+											<tr>
+												<th data-field="state" data-checkbox="true"></th>
+												<th data-field="id">ID</th>
+												<th data-field="name">企业名称</th>
+												<th data-field="cate">一级分类</th>
+												<th data-field="county">所属区域</th>
+												<th data-field="url">生产监管</th>
+											</tr>
+											</thead>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="footer">
+                <div class="pull-right">
+                    By：<a href="http://www.zi-han.net/" target="_blank">山西寰烁电子科技股份有限公司</a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> 运城市食品药品监督管理局 &copy; 2016
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+	<script src="http://webapi.amap.com/maps?v=1.3&key=ecd1b8ee647a25e85fb83164dbbc4f10"></script>
+	<script src="public/js/bootstrap-table.min.js"></script>
+    <script src="public/js/bootstrap-table-zh-CN.min.js"></script>
+	<script type="text/javascript" src="public/js/echarts.min.js"></script>
+	<script type="text/javascript" src="public/js/main2.js"></script>
+</body>
+</html>
