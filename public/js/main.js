@@ -174,31 +174,31 @@ jQuery(document).ready(function(){
     };
     var reqDatas = {
         //请求企业列表的数据地址
-        comListUrl:'http://192.168.0.117/index.php/productTrace/Ent/?region=',
+        comListUrl:'/index.php/productTrace/Ent/?region=',
         //请求柱状图的url
         getBarsUrl:function(classify){
-            return 'http://192.168.0.117/index.php/productTrace/'+classify;
+            return '/index.php/productTrace/'+classify;
         },
         //请求撒点列表的数据地址
         getMarksUrl:function(region){
-            return 'http://192.168.0.117/index.php/productTrace/Ent/?region='+region;
+            return '/index.php/productTrace/Ent/?region='+region;
         },
         //请求合格率数据
         getPassUrl:function(){
-            return 'http://192.168.0.117/index.php/product/inspect/json';
+            return '/index.php/product/inspect/json';
         },
         //请求产品效益统计
         getBenefitUrl:function(){
-            return 'http://192.168.0.117/index.php/product/market/json';
+            return '/index.php/product/market/json';
         },
         //请求品种占有率
         getOccupyUrl:function(){
-            return 'http://192.168.0.117/index.php/product/price/json';
+            return '/index.php/product/price/json';
         },
         //请求总体态势数据
         getGlobalUrl:function(){
-            // return 'http://192.168.0.117/index.php/product/chart/show';
-            return 'http://localhost:8080/FoodTracing/state01';
+            return '/index.php/product/index/chart';
+            //return 'http://localhost:8080/FoodTracing/state01';
         }
     };
     /**
@@ -682,11 +682,11 @@ jQuery(document).ready(function(){
     //初始化柱状图
     comFuc.barInit();
     //定时请求总体态势数据
-    // comFuc.ajaxGlobalRequest(reqDatas.getGlobalUrl());
-    window.setInterval(function(){
-        $totalProNum.removeClass();$totalOnlineNum.removeClass();$totalSpeNum.removeClass();$totalBatchNum.removeClass();$totalStockNum.removeClass();
-        comFuc.ajaxGlobalRequest(reqDatas.getGlobalUrl());
-    },2000);
+    comFuc.ajaxGlobalRequest(reqDatas.getGlobalUrl());
+    // window.setInterval(function(){
+    //     $totalProNum.removeClass();$totalOnlineNum.removeClass();$totalSpeNum.removeClass();$totalBatchNum.removeClass();$totalStockNum.removeClass();
+    //     comFuc.ajaxGlobalRequest(reqDatas.getGlobalUrl());
+    // },2000);
     // window.setInterval(function(){
     //     comFuc.ajaxGlobalRequest(reqDatas.getGlobalUrl());
     // },1000);

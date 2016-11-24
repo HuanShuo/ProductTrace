@@ -37,9 +37,9 @@ function showTree($result,$i=0){
         #toTop:hover{ -webkit-transform: scale(1.1);-moz-transform: scale(1.1);-ms-transform:scale(1.1);}
     </style>
 
-    <link href="<?php echo base_url()?>assets/hplus/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php echo base_url()?>assets/hplus/css/bootstrap-table.min.css" rel="stylesheet">
-    <link href="<?php echo base_url()?>assets/hplus/css/style.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>public/css/bootstrap-table.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>public/css/style.min.css" rel="stylesheet">
 </head>
 <body class="gray-bg top-navigation">
 
@@ -238,10 +238,10 @@ function showTree($result,$i=0){
             </div>
         </div>
 
-<script src="<?php echo base_url()?>assets/hplus/js/jquery.min.js"></script>
-<script src="<?php echo base_url()?>assets/hplus/js/bootstrap.min.js"></script>
-<script src="<?php echo base_url()?>assets/hplus/js/bootstrap-table.min.js"></script>
-<script src="<?php echo base_url()?>assets/hplus/js/bootstrap-table-zh-CN.min.js"></script>
+<script src="<?php echo base_url()?>public/js/jquery.min.js"></script>
+<script src="<?php echo base_url()?>public/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url()?>public/js/bootstrap-table.min.js"></script>
+<script src="<?php echo base_url()?>public/js/bootstrap-table-zh-CN.min.js"></script>
 <script type="text/javascript">
     jQuery(document).ready(function(){
         var $toTop = $('#toTop');
