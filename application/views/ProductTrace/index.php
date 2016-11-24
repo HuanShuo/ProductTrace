@@ -52,10 +52,10 @@
 		.clearfix:after{content:'.';height:0;display: block;visibility: hidden;clear:both;}
 
 	</style>
-    <link href="<?php echo base_url()?>assets/hplus/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php echo base_url()?>assets/hplus/css/style.min.css" rel="stylesheet">
-    <link href="<?php echo base_url()?>assets/hplus/css/bootstrap-table.min.css" rel="stylesheet">
-	<link href="<?php echo base_url()?>assets/hplus/css/animate.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>public/css/style.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>public/css/bootstrap-table.min.css" rel="stylesheet">
+	<link href="<?php echo base_url()?>public/css/animate.min.css" rel="stylesheet">
 </head>
 
 <body class="gray-bg top-navigation">
@@ -234,12 +234,12 @@
             </div>
         </div>
     </div>
-    <script src="<?php echo base_url()?>assets/hplus/js/jquery.min.js"></script>
-    <script src="<?php echo base_url()?>assets/hplus/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url()?>public/js/jquery.min.js"></script>
+    <script src="<?php echo base_url()?>public/js/bootstrap.min.js"></script>
 	<script src="http://webapi.amap.com/maps?v=1.3&key=ecd1b8ee647a25e85fb83164dbbc4f10"></script>
-	<script src="<?php echo base_url()?>assets/hplus/js/bootstrap-table.min.js"></script>
-    <script src="<?php echo base_url()?>assets/hplus/js/bootstrap-table-zh-CN.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url()?>assets/hplus/js/echarts.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url()?>assets/hplus/js/main.js"></script>
+	<script src="<?php echo base_url()?>public/js/bootstrap-table.min.js"></script>
+    <script src="<?php echo base_url()?>public/js/bootstrap-table-zh-CN.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url()?>public/js/echarts.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url()?>public/js/main.js"></script>
 </body>
 </html>

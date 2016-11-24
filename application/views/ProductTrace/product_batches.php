@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>生产任务信息</title>
-    <link href="<?php echo base_url()?>assets/hplus/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php echo base_url()?>assets/hplus/css/bootstrap-table.min.css" rel="stylesheet">
-    <link href="<?php echo base_url()?>assets/hplus/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
-    <link href="<?php echo base_url()?>assets/hplus/css/style.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>public/css/bootstrap-table.min.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>public/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>public/css/style.min.css" rel="stylesheet">
 </head>
 <body class="gray-bg top-navigation">
 <div id="wrapper">
@@ -90,9 +90,9 @@
     </div>
 </div>
 
-<script src="<?php echo base_url()?>assets/hplus/js/jquery.min.js"></script>
-<script src="<?php echo base_url()?>assets/hplus/js/bootstrap.min.js"></script>
-<script src="<?php echo base_url()?>assets/hplus/js/bootstrap-table.min.js"></script>
-<script src="<?php echo base_url()?>assets/hplus/js/bootstrap-table-zh-CN.min.js"></script>
+<script src="<?php echo base_url()?>public/js/jquery.min.js"></script>
+<script src="<?php echo base_url()?>public/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url()?>public/js/bootstrap-table.min.js"></script>
+<script src="<?php echo base_url()?>public/js/bootstrap-table-zh-CN.min.js"></script>
 </body>
 </html>
