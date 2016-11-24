@@ -1,1 +1,59 @@
-.top-navigation .wrapper.wrapper-content
+ul li{list-style:none;}
+ul{margin-bottom:0;}
+a{text-decoration: none;}
+.mymap{height:310px;border:1px solid #ccc;box-shadow:0 0 7px #ccc;}
+.barGraph{position:relative;}
+.tips{position:absolute;top:1px;left:23px;z-index: 100;}
+.tips ul li{display:inline-block;margin-right:1px;padding:2px 5px;background:#1ab394;text-align: center;border-radius:0 0 5px 5px;}
+.tips ul li a{font-size:12px;color:#fff;display:block;}
+.tips ul li:hover{background:#666;}
+
+.barCom{height:309px;overflow:hidden;border:1px solid #1ab394;box-shadow: 0 0 8px #1ab385}
+/*.countyList{text-align:center;height:50px;line-height:50px;}*/
+/*.countyList ul{display:inline-block;}*/
+/*.countyList ul li{display:inline-block;margin:0 1px;}*/
+/*.countyList ul li a{display: block;padding:0 8px;transform:all 2s ease;}*/
+/*.countyList ul li a:hover{background:#1ab394;color:#fff;}*/
+.countyList ul{float:left;border:1px solid red;}
+.box2 {text-align:center;}
+.box2 h3 span{font-size:30px;letter-spacing:.2em;color:#f9a123;font-weight:bold;font-family:'微软雅黑'}
+.box3{margin-top:10px;text-align:center;}
+.box3 div{color:#666;}
+.box3 span{font-size:20px;color:#666;
+    font-weight:bold;}
+.box3 small{color:#1ab385;}
+.box3 i{font-weight:bold;font-style:normal;font-size:18px;color:#666}
+/*mainPage - start*/
+#mainPage .mainPage-detail{margin-bottom:20px;font-family: '微软雅黑';color:#666;
+    font-weight:bold;padding-bottom:10px;}
+#mainPage .mainPage-detail span{margin-right:17px;
+    color:#f90;font-size:20px;}
+#mainPage .batchSort ul li{padding:4px 0;color:#ccc;}
+#mainPage .batchSort ul li a{color:#999;}
+#mainPage .batchSort ul li span{margin-right:5px;color:#1AB385;}
+/*mainPage - end*/
+#districtPage{height:547px;background-color:#fff;}
+/* infowindow信息窗口的样式 - start*/
+.markerFrame{border:1px solid #ccc;}
+.markerFrame .title{background:blue;color:#fff;padding:10px;}
+.markerFrame .content{padding:10px;}
+.markerFrame .content .img{float:left;}
+.markerFrame .content .cont{float:left;padding:10px;}
+.markerFrame .content .cont p{font-size:12px}
+/* infowindow信息窗口的样式 - end*/
+.clearfix:after{content:'.';height:0;display: block;visibility: hidden;clear:both;}
+/****************************************************/
+.ibox-title span{font-weight:600;margin-left:5px;font-size:14px;}
+.nav-logo{height:50px;line-height:50px;float:left;margin-left:10px;cursor: pointer;}
+.nav-group{float:left;margin-right:10px;padding:0 20px;height:50px;}
+.nav-group ul li{display:inline-block;}
+.nav-group ul li a{display:inline-block;line-height: 50px;padding:0 20px;font-size:14px;color:#666;font-weight: bold;}
+.nav-group ul li :hover{background:#1AB394;color:#fff;}
+.nav-user{float:right;margin-right:20px;}
+.nav-user ul li{float:left;height:50px;line-height:50px;}
+.nav-user ul li a{display:block;color:#666;}
+.nav-user ul li span{padding:0 10px;}
+.nav-user ul li a:hover{color:#1AB394;}
+.gotop{width:50px;height:50px;text-align:center;line-height:50px;border-radius: 4px;position:fixed;right:20px;bottom:60px;background:#ccc;cursor: pointer;color:#1AB394;transition: all .3s ease}
+.gotop span{font-size:18px;font-weight:bold;}
+.gotop:hover{background:#1AB394;color:#fff;}
