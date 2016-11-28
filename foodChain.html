@@ -136,7 +136,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-8">
                     <div class="row">
                         <div class="ibox">
                             <div class="ibox-title">
@@ -657,6 +657,24 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-1">
+                    <div class="timeLine">
+                        <ul>
+                            <li data-toggle="tooltip" data-placement="bottom" title="原料供应环节">
+                                <span class="iconfont icon-report-down"></span>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="bottom" title="产品生产环节">
+                                <span class="iconfont icon-anquanshengchan"></span>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="bottom" title="产品质检环节">
+                                <span class="iconfont icon-zhijian"></span>
+                            </li>
+                            <li data-toggle="tooltip" data-placement="bottom" title="出厂销售环节">
+                                <span class="iconfont icon-xiaoshouguanli"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="gotop" style="display:none;">
                     <span class="iconfont icon-top1"></span>
                 </div>
@@ -678,12 +696,33 @@
         var $clientLists = $('.client-list');
         var $rawMatList = $('.rawMatList');
         var $gotop = $('.gotop');
+        var $timeLineLi = $('.timeLine ul li');
+        var $timeLineSpan = $('.timeLine span');
         $('.dd').nestable();
         $(".fancybox").fancybox({openEffect:"none",closeEffect:"none"});
         //分页
         $rawMatList.bootstrapTable({
 
         });
+        $(document).scroll(function(){
+            console.log($('html body').scrollTop());
+        });
+        //时间轴
+        $timeLineLi.tooltip();
+        //绑定时间轴按钮事件
+        $timeLineSpan.on('click',function(){
+            alert($(this).index());
+            if($(this).index()==0){
+                $('html, body').animate({scrollTop:'0px'},500);
+            }else if($(this).index()==1){
+                $('html, body').animate({scrollTop:'552px'},500);
+            }else if($(this).index()==2){
+                $('html, body').animate({scrollTop:'971px'},500);
+            }else if($(this).index()==3){
+                $('html, body').animate({scrollTop:'1472px'},500);
+            }
+        });
+
         $clientLists.on({
             'click':function(){
                 var index = $(this).index();

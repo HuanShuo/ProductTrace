@@ -54,6 +54,11 @@ a{text-decoration: none;}
 .nav-user ul li a{display:block;color:#666;}
 .nav-user ul li span{padding:0 10px;}
 .nav-user ul li a:hover{color:#1AB394;}
+
+.timeLine{position:fixed;padding-top:30px;border:1px solid red;width:100px;}
+.timeLine ul{width:30px;margin:0 auto;}
+.timeLine ul li{color:#fff;width:30px;height:30px;background:#1AB394;margin-bottom:50px;border-radius:50%;text-align:center;line-height:30px;color:#fff;cursor: pointer}
+.timeLine ul li span{display:block;}
 .gotop{width:50px;height:50px;text-align:center;line-height:50px;border-radius: 4px;position:fixed;right:20px;bottom:60px;background:#ccc;cursor: pointer;color:#1AB394;transition: all .3s ease}
 .gotop span{font-size:18px;font-weight:bold;}
 .gotop:hover{background:#1AB394;color:#fff;}
