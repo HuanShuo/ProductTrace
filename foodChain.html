@@ -137,7 +137,7 @@
                     </div>
                 </div>
                 <div class="col-md-8">
-                    <div class="row">
+                    <div class="row page1">
                         <div class="ibox">
                             <div class="ibox-title">
                                <i class="iconfont icon-report-down"></i><span>原料供应环节</span>
@@ -335,7 +335,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row page2">
                         <div class="ibox">
                             <div class="ibox-title">
                                 <i class="iconfont icon-anquanshengchan"></i><span>产品生产环节</span>
@@ -410,7 +410,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row page3">
                         <div class="ibox">
                             <div class="ibox-title">
                                 <i class="iconfont icon-zhijian"></i><span>产品质检环节</span>
@@ -555,7 +555,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row page4">
                         <div class="ibox">
                             <div class="ibox-title">
                                 <i class="iconfont icon-xiaoshouguanli"></i><span>出厂销售环节</span>
@@ -696,30 +696,31 @@
         var $clientLists = $('.client-list');
         var $rawMatList = $('.rawMatList');
         var $gotop = $('.gotop');
-        var $timeLineLi = $('.timeLine ul li');
-        var $timeLineSpan = $('.timeLine span');
+        var $timeLineLi = $('.timeLine').find('li');
+//        var $timeLineSpan = $('.timeLine').find('span');
         $('.dd').nestable();
         $(".fancybox").fancybox({openEffect:"none",closeEffect:"none"});
         //分页
         $rawMatList.bootstrapTable({
 
         });
-        $(document).scroll(function(){
-            console.log($('html body').scrollTop());
-        });
-        //时间轴
-        $timeLineLi.tooltip();
-        //绑定时间轴按钮事件
-        $timeLineSpan.on('click',function(){
-            alert($(this).index());
-            if($(this).index()==0){
-                $('html, body').animate({scrollTop:'0px'},500);
-            }else if($(this).index()==1){
-                $('html, body').animate({scrollTop:'552px'},500);
-            }else if($(this).index()==2){
-                $('html, body').animate({scrollTop:'971px'},500);
-            }else if($(this).index()==3){
-                $('html, body').animate({scrollTop:'1472px'},500);
+        //时间轴,通过按钮翻转页面
+        $timeLineLi.on({
+            'mouseover':function(){
+                $timeLineLi.tooltip();
+            },
+            'click':function(){
+                var _index = $(this).index();
+                var cHeight=0;
+                if(_index==0){
+                    cHeight = 0;
+                    $('html body').stop(true,true).animate({scrollTop:cHeight+'px'},500);
+                }else{
+                    for(var i = 1;i<_index+1;i++){
+                        cHeight = cHeight + $('.'+'page'+i).height();
+                    };
+                    $('html body').stop(true,true).animate({scrollTop:cHeight+'px'},500);
+                };
             }
         });
 
@@ -735,49 +736,52 @@
                 }
             }
         });
-        //gotop
+        //
         $(document).scroll(function(){
             if($(this).scrollTop()>200){
                 $gotop.show();
             }else{
                 $gotop.hide();
-            }
+            };
         });
         $gotop.on('click',function(){
             $('html, body').animate({scrollTop:'0px'},500);
         });
+
         //原料供应商
-        $(".rawMatEntModule").on('click','a',function(){
-            $(this).parents('.rawMatEntModule').fadeOut().siblings().fadeIn();
-        });
-        $(".rawMatEntInfos button").on('click',function(){
-            $(this).parents('.rawMatEntInfos').fadeOut().siblings().fadeIn();
-        });
-        //原料
-        $(".rawMatModule").on('click','a',function(){
-            $(this).parents('.rawMatModule').fadeOut().siblings().fadeIn();
-        });
-        $(".rawMatInfos button").on('click',function(){
-            $(this).parents('.rawMatInfos').fadeOut().siblings().fadeIn();
-        });
-        //生产环节
-        $(".batchModule").on('click','a',function(){
-            $(this).parents('.batchModule').fadeOut().siblings().fadeIn();
-        });
-        $(".processes button").on('click',function(){
-            $(this).parents('.processes').fadeOut().siblings().fadeIn();
-        });
-        //质检环节
-        $(".qualityTest button").on('click',function(){
-            $(this).parents('.qualityTest').fadeOut().siblings().fadeIn();
-        });
-        //经销商环节
-        $(".dealerListMoudle").on('click','a',function(){
-            $(this).parents('.dealerListMoudle').fadeOut().siblings().fadeIn();
-        });
-        $(".dealerListInfos button").on('click',function(){
-            $(this).parents('.dealerListInfos').fadeOut().siblings().fadeIn();
-        });
+        ;(function(){
+            $(".rawMatEntModule").on('click','a',function(){
+                $(this).parents('.rawMatEntModule').fadeOut().siblings().fadeIn();
+            });
+            $(".rawMatEntInfos button").on('click',function(){
+                $(this).parents('.rawMatEntInfos').fadeOut().siblings().fadeIn();
+            });
+            //原料
+            $(".rawMatModule").on('click','a',function(){
+                $(this).parents('.rawMatModule').fadeOut().siblings().fadeIn();
+            });
+            $(".rawMatInfos button").on('click',function(){
+                $(this).parents('.rawMatInfos').fadeOut().siblings().fadeIn();
+            });
+            //生产环节
+            $(".batchModule").on('click','a',function(){
+                $(this).parents('.batchModule').fadeOut().siblings().fadeIn();
+            });
+            $(".processes button").on('click',function(){
+                $(this).parents('.processes').fadeOut().siblings().fadeIn();
+            });
+            //质检环节
+            $(".qualityTest button").on('click',function(){
+                $(this).parents('.qualityTest').fadeOut().siblings().fadeIn();
+            });
+            //经销商环节
+            $(".dealerListMoudle").on('click','a',function(){
+                $(this).parents('.dealerListMoudle').fadeOut().siblings().fadeIn();
+            });
+            $(".dealerListInfos button").on('click',function(){
+                $(this).parents('.dealerListInfos').fadeOut().siblings().fadeIn();
+            });
+        })();
     });
 </script>
 </body>
